@@ -1,4 +1,48 @@
-.dark-mode{
-    color: white;
-    background-color: black;
+*,
+*::before,
+*::after{
+  box-sizing: border-box;
+  text-align: center;
 }
+
+body{
+  font-family: 'Verdana';
+  background-color: #eee;
+  color: #121212;
+}
+
+.dark-mode{
+    color: #eee;
+    background-color: #222222;
+}
+
+img{
+  border-radius: 10px;
+}
+
+.gallery #images{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.gallery #images img:hover{
+  filter: brightness(75%); /* Makes the image in the gallery less bright when mouse hovers over the image */
+}
+
+#togglemode{
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 500px){
+
+  #display{
+    width: 75%;
+  }
+
+  .gallery #images{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+}
+  
