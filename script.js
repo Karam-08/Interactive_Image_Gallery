@@ -11,32 +11,32 @@ $(document).ready(function(){
         // The new image is shown instantly so the display has to dissapear instantly as well to give the illusion that it changes to the new image
         // It dissapears, waits for two seconds, then the new Image appears
         $("#display").slideUp(0).delay(2000).attr('src', 'Images/image1.jpg').attr('width', '500').slideDown(1000)
-        currentImage == 0 // ID for image used in the arrow key function
+        currentImage = 0 // ID for image used in the arrow key function
     })
     // Repeat for every image
     $(".image2").click(function(){
         $("#display").slideUp(0).delay(2000).attr('src', 'Images/image2.jpg').attr('width', '500').slideDown(1000)
-        currentImage == 1
+        currentImage = 1
     })
 
     $(".image3").click(function(){
         $("#display").slideUp(0).delay(2000).attr('src', 'Images/image3.jpg').attr('width', '500').slideDown(1000)
-        currentImage == 2
+        currentImage = 2
     })
 
     $(".image4").click(function(){
         $("#display").slideUp(0).delay(2000).attr('src', 'Images/image4.webp').attr('width', '500').slideDown(1000)
-        currentImage == 3
+        currentImage = 3
     })
 
     $(".image5").click(function(){
         $("#display").slideUp(0).delay(2000).attr('src', 'Images/image5.jpg').attr('width', '500').slideDown(1000)
-        currentImage == 4
+        currentImage = 4
     })
 
     $(".image6").click(function(){
         $("#display").slideUp(0).delay(2000).attr('src', 'Images/image6.webp').attr('width', '500').slideDown(1000)
-        currentImage == 5
+        currentImage = 5
     })
     $imgSrc =''
     $("body").on("keydown", function(event){ // When the key is pressed down
